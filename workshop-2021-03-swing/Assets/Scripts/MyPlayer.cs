@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -158,7 +158,7 @@ public class MyPlayer : MonoBehaviour {
 	}
 
 	private void FixedUpdate() {
-		var t = Time.deltaTime;
+		var t = Time.fixedDeltaTime;
 		velocity.y += gravity * t;
 
 //		Debug.DrawRay(transform.position, velocity);
